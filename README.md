@@ -24,20 +24,18 @@ In this home lab, I will install Active Directory Domain Services (AD DS), set u
 <h3>Part 1: Install Active Directory</h3>
 <ol>
   <li>Login to DC-1 and install Active Directory Domain Services</li>
-  <p align="center">
-    <img src="https://github.com/user-attachments/assets/bfd0079c-3d85-4696-9537-d63fad2596cc" alt="AD Installation Screenshot" />
-  </p>
+  
+![image](https://github.com/user-attachments/assets/d431cf87-0f70-4e93-a2a7-5e0e5eb568af)
 
   <li>Promote the server as a Domain Controller and set up a new forest as <code>mydomain.com</code></li>
-  <p align="center">
-    <img src="https://github.com/user-attachments/assets/79352e0e-f5d7-42cd-b4b4-cbfb84ee0230" alt="Promote Domain Controller Screenshot" />
-  </p>
+
+  ![image](https://github.com/user-attachments/assets/34f545d0-6525-4dd6-a972-21dfc35cbe56)
 
   <li>Restart the server and log in as <code>mydomain.com\labuser</code></li>
   <li>Create Organizational Units (OUs) named <code>_EMPLOYEES</code> and <code>_ADMINS</code></li>
-  <p align="center">
-    <img src="https://github.com/user-attachments/assets/d379e361-fbd5-41ce-b3cd-c3f23740291b" alt="ADUC Organizational Units Screenshot" />
-  </p>
+  
+![image](https://github.com/user-attachments/assets/79ea811e-7454-4b95-8dd9-f8ea60b37cc6)
+
 
   <li>Create a Domain Admin user (<code>jane_admin</code>) in ADUC and add her to the <code>Domain Admins</code> security group</li>
   <li>Log in as <code>mydomain.com\jane_admin</code> for administrative tasks</li>
@@ -47,9 +45,8 @@ In this home lab, I will install Active Directory Domain Services (AD DS), set u
 <ol>
   <li>Login to Client-1 as the local admin and join it to the domain <code>mydomain.com</code></li>
   <li>Verify Client-1 appears in ADUC</li>
-  <p align="center">
-    <img src="https://github.com/user-attachments/assets/08d3fa62-dace-4b14-9286-f87454232184" alt="Client-1 in ADUC Screenshot" />
-  </p>
+  
+ ![image](https://github.com/user-attachments/assets/d9c53032-3389-43e4-bbc1-c7c7e44a6e26)
 
   <li>Create a new OU named <code>_CLIENTS</code> and move Client-1 into it</li>
 </ol>
@@ -58,9 +55,8 @@ In this home lab, I will install Active Directory Domain Services (AD DS), set u
 <ol>
   <li>Log in to Client-1 as <code>mydomain.com\jane_admin</code></li>
   <li>Enable Remote Desktop and allow access for domain users</li>
-  <p align="center">
-    <img src="https://github.com/user-attachments/assets/b5796d06-cfbd-4e40-a09e-08034bf7f68b" alt="Remote Desktop Setup Screenshot" />
-  </p>
+
+  ![image](https://github.com/user-attachments/assets/657b0725-ca7c-4290-a521-5af06c83e39a)
 
   <li>Test by logging in as a non-administrative user</li>
 </ol>
@@ -70,10 +66,8 @@ In this home lab, I will install Active Directory Domain Services (AD DS), set u
   <li>Login to DC-1 as <code>jane_admin</code></li>
   <li>Open PowerShell ISE as an administrator</li>
   <li>Run a PowerShell script to create multiple users for RDP access</li>
-  <p align="center">
-    <img src="https://github.com/user-attachments/assets/54e8f607-4f7b-407c-84e2-adce0f33bb04" alt="PowerShell User Creation Screenshot" />
-  </p>
-</ol>
+  
+ ![image](https://github.com/user-attachments/assets/5eade783-d217-4f42-88c0-663b05375a9c)
 
 <h2>Key Takeaways</h2>
 <ul>
